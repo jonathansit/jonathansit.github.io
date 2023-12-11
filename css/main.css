@@ -1,0 +1,193 @@
+/* MAIN */
+body {
+    margin: 0;
+    background-color: rgb(193, 190, 202)
+}
+
+.container {
+    background-color: #717ce0;
+    color: white;
+    padding: 5px 0px;
+}
+
+.container a {
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.flex-container .col-1 {
+    width: 10%;
+}
+
+.flex-container .col-2 {
+    width: 20%
+}
+
+.flex-container .col-3 {
+    width: 30%;
+}
+
+.flex-container .col-4 {
+    width: 40%;
+}
+
+.flex-container .col-5 {
+    width: 50%;
+}
+
+.flex-container .col-6 {
+    width: 60%;
+}
+
+.flex-container .col-7 {
+    width: 70%;
+}
+
+.flex-container .col-8 {
+    width: 80%;
+}
+
+.flex-container .col-9 {
+    width: 90%;
+}
+
+@media (min-width: 375px) {
+    .flex-container .col-xs-1 {
+        width: 20%;
+    }
+}
+@media (min-width: 375px) {
+    .flex-container .col-xs-2 {
+        width: 40%;
+    }
+}
+@media (min-width: 375px) {
+    .flex-container .col-xs-3 {
+        width: 60%;
+    }
+}
+@media (min-width: 375px) {
+    .flex-container .col-xs-4 {
+        width: 80%;
+    }
+}
+@media (min-width: 375px) {
+    .flex-container .col-xs-5 {
+        width: 100%;
+    }
+}
+.margin-btm {
+    margin-bottom: 2vh;
+}
+
+/* PROFILE */
+#container-profile {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#container-profile img {
+    width: 50%;
+    height: 50%;
+}
+
+#container-profile a {
+    background-color: #4e5cdd;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#container-profile a:hover {
+    background-color: #000a68;
+}
+
+
+/* ABOUT ME */
+#container-about-me {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2.5vw;
+}
+
+#content-about-me td {
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+
+/* EDUCATION */
+#container-education {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+table.degree {
+    max-width: 1024px;
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    margin-bottom: 2vh;
+}
+
+td {
+    width: 50%;
+    padding: 15px;
+}
+
+td h3 {
+    margin: 0;
+}
+
+td p {
+    padding: 15px;
+}
+
+.degree-duration {
+    text-align: end;
+}
+
+.degree-name {
+    font-weight: bold;
+}
+
+/* CONTACT ME */
+#container-contact-me {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+
+#form-contact-me {
+    width: 100%;
+}
+
+#form-contact-me textarea {
+    width: 75%;
+}
+
+#container-hourly-rate {
+    visibility: hidden;
+}
+
+#thank-you {
+    display: none;
+    width: 75%;
+}
+
+#apologies {
+    display: none;
+    width: 75%;
+}
