@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jonathan Sit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Sit - Resume</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+        <!--PROFILE-->
+        <div id="container-profile">
+            <!--IMAGE-->
+            <img src="images/jonathan_portrait.jpg" alt="Jonathan Sit profile picture">
+            <!--NAME-->
+            <h1>Jonathan Sit</h1>
+            <!--JOB TITLE-->
+            <h2 id="job-title">
+                WEB DEVELOPER
+            </h2>
+            <!--DOWNLOAD PDF-->
+            <a href="document\JonathanSitResume2023.pdf" role="button" target="_blank">RESUME</a>
+            <!--CONTACT ME LINK-->
+            <a href="#contact-me" role="button">CONTACT ME</a>
+        </div>
+
+        <!--ABOUT ME-->
+        <div class="container">
+            <div id="container-about-me">
+                <h2 id="about-me">
+                    ABOUT ME
+                </h2>
+                <div id="content-about-me" class="flex-container">
+                    <div class="col-6 col-xs-3">
+                        <div class="flex-container">
+                            <!--honesty statement-->
+                            <div class="margin-btm">
+                                I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                                No part of this assessment has been copied manually or electronically from any other source
+                                (including web sites) except for the information supplied by the WEB222 instructors and / or
+                                made available in this assessment for my use. I also declare that no part of this assignment has
+                                been distributed to other students.
+                            </div>
+                            <!--cource WEB222-->
+                            <div class="col-2 col-xs-1"><b>COURSE:</b></div>
+                            <div class="col-8 margin-btm">WEB222</div>
+                            <!--class section-->
+                            <div class="col-2 col-xs-1"><b>CLASS:</b></div>
+                            <div class="col-8 margin-btm">Web Programming Principles</div>
+                            <!--professor name-->
+                            <div class="col-2 col-xs-1"><b>PROFESSOR:</b></div>
+                            <div class="col-8 margin-btm">Mark Meritt</div>
+                            <!--current date-->
+                            <div class="col-2 col-xs-1"><b>DATE:</b></div>
+                            <div id="today" class="col-8 margin-btm"></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xs-2">
+                        <div class="flex-container">
+                            <!--email-->
+                            <div class="col-2 col-xs-1"><b>EMAIL:</b></div>
+                            <div class="col-8 margin-btm col-xs-4"><a href="mailto: sit.jonathan@gmail.com">sit.jonathan@gmail.com</a></div>
+                            <!--phone-->
+                            <div class="col-2 col-xs-1"><b>PHONE:</b></div>
+                            <div class="col-8 margin-btm col-xs-4"><a href="tel:+16479299630">(647) 929-9630</a></div>
+                            <!--address-->
+                            <div class="col-2 col-xs-1"><b>ADDRESS:</b></div>
+                            <div class="col-8 margin-btm col-xs-4">761 Gladstone Ave.,<br>Toronto, ON, M6H 3J7</div>
+                            <!--skills-->
+                            <div class="col-2 col-xs-1"><b>Language:</b></div>
+                            <div class="col-8 margin-btm col-xs-4">English, Cantonese</div>
+                            <div class="col-2 col-xs-1"><b>Hobby:</b></div>
+                            <div class="col-8 margin-btm col-xs-4">Baking, reading</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--EDUCATION-->
+        <div id="container-education">
+            <h2 id="education">
+                EDUCATION
+            </h2>
+            <div id="container-degree">
+                <!--institute name-->
+                <!--duration of degree-->
+                <!--degree name-->
+                <!--program name-->
+                <!--note-->
+            </div>
+        </div>
+        
+        <!--CONTACT ME (FORM)-->
+        <div class="container">
+            <div id="container-contact-me">
+                <h2 id="contact-me">
+                    CONTACT ME
+                </h2>
+                <form id="form-contact-me" onsubmit="submitForm()">
+                    <div class="flex-container">
+                        <!--name-->
+                        <label for="name" class="col-1 col-xs-1">Name:</label>
+                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="name" name="name" required></div>
+                        <!--email address-->
+                        <label for="email" class="col-1 col-xs-1">Email:</label>
+                        <div class="col-9 margin-btm col-xs-4"><input type="email" id="email" name="email" required></div>
+                        <!--phone number-->
+                        <label for="phone" class="col-1 col-xs-1">Phone number:</label>
+                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="phone" name="phone" required pattern="\d{3}*[\-]\d{3}*[\-]\d{4}" placeholder="e.g. 123-456-7890"></div>
+                        <!--address-->
+                        <label for="address" class="col-1 col-xs-1">Address:</label>
+                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="address" name="address" required></div>
+                        <!--city-->
+                        <label for="city" class="col-1 col-xs-1">City:</label>
+                        <div class="col-9 margin-btm col-xs-4"><input type="text" list="cities" id="city" name="city" required></div>
+                        <!--postal code-->
+                        <label for="postal" class="col-1 col-xs-1">Postal code:</label>
+                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="postal" name="postal" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="e.g. A2A 3A4"></div>
+                        <!--radio button-->
+                        <label for="subject" class="col-1 col-xs-1">Subject:</label>
+                        <div class="col-9 margin-btm col-xs-4">
+                            <input type="radio" id="question" name="subject" value="question" required onchange="toggleHourlyRate()">
+                            <label for="question">Question</label><br>
+                            <input type="radio" id="comment" name="subject" value="comment" onchange="toggleHourlyRate()">
+                            <label for="comment">Comment</label><br>
+                            <input type="radio" id="hiring" name="subject" value="hiring" onchange="toggleHourlyRate()">
+                            <label for="hiring">Hiring</label><br>
+                        </div>
+                    </div>
+                    <!--hourly rate-->
+                    <div id="container-hourly-rate" class="flex-container">
+                        <label for="hourly-rate" class="col-1">Hourly rate:</label>
+                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="hourly-rate" name="hourly-rate"></div>
+                    </div>
+                    
+                    <div class="flex-container">
+                        <!--message input box (multi-line)-->
+                        <label for="message" class="col-1 col-xs-1">Message:</label>
+                        <div class="col-9 margin-btm col-xs-4"><textarea type="text" rows="5" id="message" name="message" required></textarea></div>
+                        <!--Submit-->
+                        <div class="col-1 col-xs-1"></div>
+                        <div class="col-9 margin-btm col-xs-4"><input type="submit" value="Submit" class="submit-btn"/></div>
+                    </div>
+                </form>
+                <div class="flex-container">
+                    <div class="col-1 col-xs-1"></div>
+                    <div id="thank-you">Thank you for your submission</div>
+                    <div id="apologies">Sorry we encountered an error. Please try again later.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <datalist id="cities">
+        <!--B-->
+        <option value="Banff"></option>
+        <option value="Barrie"></option>
+        <option value="Brampton"></option>
+        <option value="Burlington"></option>
+        <option value="Calgary"></option>
+        <option value="Charlottetown"></option>
+        <!--E-->
+        <option value="Edmonton"></option>
+        <option value="Fredericton"></option>
+        <option value="Gatineau"></option>
+        <option value="Guelph"></option>
+        <option value="Halifax"></option>
+        <option value="Hamilton"></option>
+        <!--K-->
+        <option value="Kingston"></option>
+        <option value="Kitchener"></option>
+        <option value="London"></option>
+        <option value="Markham"></option>
+        <option value="Mississauga"></option>
+        <option value="Montreal"></option>
+        <option value="Niagara Falls"></option>
+        <!--O-->
+        <option value="Oakville"></option>
+        <option value="Oshawa"></option>
+        <option value="Ottawa"></option>
+        <option value="Quebec"></option>
+        <option value="Saskatoon"></option>
+        <option value="Sudbury"></option>
+        <option value="Toronto"></option>
+        <!--V-->
+        <option value="Vancouver"></option>
+        <option value="Vaughan"></option>
+        <option value="Windsor"></option>
+        <option value="Winnipeg"></option>
+        <option value="Yellowknife"></option>
+    </datalist>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/education.js"></script>
+    <script src="./js/form.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
