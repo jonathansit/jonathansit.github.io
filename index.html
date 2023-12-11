@@ -21,6 +21,7 @@
             </h2>
             <!--DOWNLOAD PDF-->
             <a href="document\JonathanSitResume2023.pdf" role="button" target="_blank">RESUME</a>
+            <br><br>
             <!--CONTACT ME LINK-->
             <a href="#contact-me" role="button">CONTACT ME</a>
         </div>
@@ -32,7 +33,7 @@
                     ABOUT ME
                 </h2>
                 <div id="content-about-me" class="flex-container">
-                    <div class="col-6 col-xs-3">
+                    <div class="col-6 col-m-4 col-xs-5">
                         <div class="flex-container">
                             <!--honesty statement-->
                             <div class="margin-btm">
@@ -43,35 +44,35 @@
                                 been distributed to other students.
                             </div>
                             <!--cource WEB222-->
-                            <div class="col-2 col-xs-1"><b>COURSE:</b></div>
-                            <div class="col-8 margin-btm">WEB222</div>
+                            <div class="col-2 col-m-2 col-xs-2"><b>COURSE:</b></div>
+                            <div class="col-8 col-m-2 col-xs-3 margin-btm">WEB222</div>
                             <!--class section-->
-                            <div class="col-2 col-xs-1"><b>CLASS:</b></div>
-                            <div class="col-8 margin-btm">Web Programming Principles</div>
+                            <div class="col-2 col-m-2 col-xs-2"><b>CLASS:</b></div>
+                            <div class="col-8 col-m-2 col-xs-3 margin-btm">Web Programming Principles</div>
                             <!--professor name-->
-                            <div class="col-2 col-xs-1"><b>PROFESSOR:</b></div>
-                            <div class="col-8 margin-btm">Mark Meritt</div>
+                            <div class="col-2 col-m-2 col-xs-2"><b>PROFESSOR:</b></div>
+                            <div class="col-8 col-m-2 col-xs-3 margin-btm">Mark Meritt</div>
                             <!--current date-->
-                            <div class="col-2 col-xs-1"><b>DATE:</b></div>
-                            <div id="today" class="col-8 margin-btm"></div>
+                            <div class="col-2 col-m-2 col-xs-2"><b>DATE:</b></div>
+                            <div id="today" class="col-8 col-m-2 col-xs-3 margin-btm"></div>
                         </div>
                     </div>
-                    <div class="col-4 col-xs-2">
+                    <div class="col-4 col-m-4 col-xs-5">
                         <div class="flex-container">
                             <!--email-->
-                            <div class="col-2 col-xs-1"><b>EMAIL:</b></div>
-                            <div class="col-8 margin-btm col-xs-4"><a href="mailto: sit.jonathan@gmail.com">sit.jonathan@gmail.com</a></div>
+                            <div class="col-2 col-m-2 col-xs-2"><b>EMAIL:</b></div>
+                            <div class="col-8 col-m-2 col-xs-3 margin-btm"><a href="mailto: sit.jonathan@gmail.com">sit.jonathan@gmail.com</a></div>
                             <!--phone-->
-                            <div class="col-2 col-xs-1"><b>PHONE:</b></div>
-                            <div class="col-8 margin-btm col-xs-4"><a href="tel:+16479299630">(647) 929-9630</a></div>
+                            <div class="col-2 col-xs-2"><b>PHONE:</b></div>
+                            <div class="col-8 col-m-2 col-xs-3 margin-btm"><a href="tel:+16479299630">(647) 929-9630</a></div>
                             <!--address-->
-                            <div class="col-2 col-xs-1"><b>ADDRESS:</b></div>
-                            <div class="col-8 margin-btm col-xs-4">761 Gladstone Ave.,<br>Toronto, ON, M6H 3J7</div>
+                            <div class="col-2 col-m-2 col-xs-2"><b>ADDRESS:</b></div>
+                            <div class="col-8 col-m-2 col-xs-3 margin-btm">761 Gladstone Ave.,<br>Toronto, ON, M6H 3J7</div>
                             <!--skills-->
-                            <div class="col-2 col-xs-1"><b>Language:</b></div>
-                            <div class="col-8 margin-btm col-xs-4">English, Cantonese</div>
-                            <div class="col-2 col-xs-1"><b>Hobby:</b></div>
-                            <div class="col-8 margin-btm col-xs-4">Baking, reading</div>
+                            <div class="col-2 col-m-2 col-xs-2"><b>Language:</b></div>
+                            <div class="col-8 col-m-2 col-xs-3 margin-btm">English, Cantonese</div>
+                            <div class="col-2 col-m-2 col-xs-2"><b>Hobby:</b></div>
+                            <div class="col-8 col-m-2 col-xs-3 margin-btm">Baking, reading</div>
                         </div>
                     </div>
                 </div>
@@ -101,26 +102,26 @@
                 <form id="form-contact-me" onsubmit="submitForm()">
                     <div class="flex-container">
                         <!--name-->
-                        <label for="name" class="col-1 col-xs-1">Name:</label>
-                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="name" name="name" required></div>
+                        <label for="name" class="col-1 col-m-2 col-xs-2">Name:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><input type="text" id="name" name="name" required></div>
                         <!--email address-->
-                        <label for="email" class="col-1 col-xs-1">Email:</label>
-                        <div class="col-9 margin-btm col-xs-4"><input type="email" id="email" name="email" required></div>
+                        <label for="email" class="col-1 col-m-2 col-xs-2">Email:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><input type="email" id="email" name="email" required></div>
                         <!--phone number-->
-                        <label for="phone" class="col-1 col-xs-1">Phone number:</label>
-                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="phone" name="phone" required pattern="\d{3}*[\-]\d{3}*[\-]\d{4}" placeholder="e.g. 123-456-7890"></div>
+                        <label for="phone" class="col-1 col-m-2 col-xs-2">Phone number:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><input type="text" id="phone" name="phone" required pattern="\d{3}*[\-]\d{3}*[\-]\d{4}" placeholder="e.g. 123-456-7890"></div>
                         <!--address-->
-                        <label for="address" class="col-1 col-xs-1">Address:</label>
-                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="address" name="address" required></div>
+                        <label for="address" class="col-1 col-m-2 col-xs-2">Address:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><input type="text" id="address" name="address" required></div>
                         <!--city-->
-                        <label for="city" class="col-1 col-xs-1">City:</label>
-                        <div class="col-9 margin-btm col-xs-4"><input type="text" list="cities" id="city" name="city" required></div>
+                        <label for="city" class="col-1 col-m-2 col-xs-2">City:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><input type="text" list="cities" id="city" name="city" required></div>
                         <!--postal code-->
-                        <label for="postal" class="col-1 col-xs-1">Postal code:</label>
-                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="postal" name="postal" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="e.g. A2A 3A4"></div>
+                        <label for="postal" class="col-1 col-m-2 col-xs-2">Postal code:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><input type="text" id="postal" name="postal" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" placeholder="e.g. A2A 3A4"></div>
                         <!--radio button-->
-                        <label for="subject" class="col-1 col-xs-1">Subject:</label>
-                        <div class="col-9 margin-btm col-xs-4">
+                        <label for="subject" class="col-1 col-m-2 col-xs-2">Subject:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm">
                             <input type="radio" id="question" name="subject" value="question" required onchange="toggleHourlyRate()">
                             <label for="question">Question</label><br>
                             <input type="radio" id="comment" name="subject" value="comment" onchange="toggleHourlyRate()">
@@ -131,21 +132,21 @@
                     </div>
                     <!--hourly rate-->
                     <div id="container-hourly-rate" class="flex-container">
-                        <label for="hourly-rate" class="col-1">Hourly rate:</label>
-                        <div class="col-9 margin-btm col-xs-4"><input type="text" id="hourly-rate" name="hourly-rate"></div>
+                        <label for="hourly-rate" class="col-1 col-m-2 col-xs-2">Hourly rate:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><input type="text" id="hourly-rate" name="hourly-rate"></div>
                     </div>
                     
                     <div class="flex-container">
                         <!--message input box (multi-line)-->
-                        <label for="message" class="col-1 col-xs-1">Message:</label>
-                        <div class="col-9 margin-btm col-xs-4"><textarea type="text" rows="5" id="message" name="message" required></textarea></div>
+                        <label for="message" class="col-1 col-m-2 col-xs-2">Message:</label>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><textarea type="text" rows="5" id="message" name="message" required></textarea></div>
                         <!--Submit-->
-                        <div class="col-1 col-xs-1"></div>
-                        <div class="col-9 margin-btm col-xs-4"><input type="submit" value="Submit" class="submit-btn"/></div>
+                        <div class="col-1 col-m-2 col-xs-2"></div>
+                        <div class="col-9 col-m-2 col-xs-3 margin-btm"><input type="submit" value="Submit" class="submit-btn"/></div>
                     </div>
                 </form>
                 <div class="flex-container">
-                    <div class="col-1 col-xs-1"></div>
+                    <div class="col-1 col-m-2 col-xs-2"></div>
                     <div id="thank-you">Thank you for your submission</div>
                     <div id="apologies">Sorry we encountered an error. Please try again later.</div>
                 </div>
